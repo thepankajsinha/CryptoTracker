@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import "./Navbar.css"
 import { ArrowUpRight } from 'lucide-react';
 import { CoinContext } from '../../context/CoinContext';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -34,7 +35,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className="nav-left">
-            <h1 className='logo'>CryptoTracker</h1>
+            <Link to={"/"}><h1 className='logo'>CryptoTracker</h1></Link>
         </div>
 
 
